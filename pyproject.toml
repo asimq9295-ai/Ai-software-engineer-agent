@@ -1,0 +1,20 @@
+[project]
+name = "ai-software-engineer-agent"
+version = "0.1.0"
+description = "Streamlit AI software engineer agent using Gemini and SQLite."
+requires-python = ">=3.11"
+dependencies = [
+  "google-genai>=1.0.0",
+  "python-dotenv>=1.0.1",
+  "requests>=2.32.0",
+  "streamlit>=1.36.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
